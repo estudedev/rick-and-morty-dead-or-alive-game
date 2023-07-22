@@ -5,6 +5,15 @@ O "Rick and Morty Alive or Not Game" é um jogo simples baseado na popular séri
 
 Canal: https://youtube.com/@estudedev
 
+### Preview do App
+![Preview do app](./public/preview.png)
+
+
+### Stack
+* ReactJS
+* Axios
+* React Toastify
+* Consumo de API externa 
 
 ### Configuração do Ambiente de Desenvolvimento
 
