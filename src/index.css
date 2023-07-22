@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "Rick and Morty";
+  src: local("get_schwifty"), url("./fonts/get_schwifty.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Rick and Morty, sans-serif;
+}
+
+html {
+  height: 100vh;
+  width: 100%;
+  background-color: #18181b;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  color: #fff;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #7b2abf;
+  color: #fff;
+  font-size: 1rem;
+  border: 1px solid rgba(204, 204, 204, 0.37);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #39065e;
+}
+
+td {
+  text-align: center;
+}
+
+.character {
+  display: flex;
+  margin-bottom: 16px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #18181b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  box-shadow: 13px 6px 17px rgb(63 81 181 / 16%);
+  margin: 8px;
+  border-radius: 10px;
+  color: #ccc;
+  width: 60%;
+  transition: box-shadow 1.5s ease;
+}
+
+.character:hover {
+  box-shadow: 13px 6px 17px rgb(63 81 181 / 51%);
+}
+
+@media (min-width: 1000px) {
+  .character {
+    width: 30%;
+  }
+}
+
+.picture {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.name {
+  text-align: center;
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.image-skeleton {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  animation: image-skeleton 1s infinite ease-in-out;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+  margin-top: 32px;
+}
+
+.table caption {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.table th {
+  font-weight: bold;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+
+@keyframes image-skeleton {
+  0% {
+    background-position: -200px 0;
+  }
+
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+.skeleton {
+  width: 100%;
+  margin-top: 16px;
+  height: 167px;
+  background-color: #f0f0f0;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 24px;
+  gap: 10px;
+}
+
+.alive {
+  background-color: rgb(52 240 52 / 25%);
+  color: #ffffff;
+}
+
+.alive:hover {
+  background-color: rgba(13, 56, 13, 0.69);
+  color: #ffffff;
+}
+
+.dead {
+  background-color: rgb(255 0 0 / 22%);
+  color: #ffffff;
+}
+
+.dead:hover {
+  background-color: rgba(70, 2, 2, 0.22);
+  color: #ffffff;
+}
+
+.unknown {
+  background-color: #00bcd48f;
+  color: #ffffff;
+}
+
+.unknown:hover {
+  background-color: #032a2d;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container {
+  margin-bottom: 32px;
+}
+
+.title-container h1 {
+  -webkit-text-fill-color: #16adcc;
+  -webkit-text-stroke-color: #c4d04f;
+  -webkit-text-stroke-width: 2px;
+}
