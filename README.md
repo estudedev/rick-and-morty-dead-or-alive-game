@@ -22,11 +22,11 @@ Para contribuir para este projeto ou executá-lo localmente, siga as etapas abai
 1. Certifique-se de ter o Node.js instalado em sua máquina. Caso precise instalá-lo, acesse https://nodejs.org/ e siga as instruções.
 2. Faça o clone deste repositório em seu computador:
 ```bash
-git clone https://github.com/seu-usuario/rick-and-morty-alive-or-not.git
+git clone https://github.com/estudedev/rick-and-morty-dead-or-alive-game.git
 ```
 3. Acesse o diretório do projeto:
 ```bash
-cd dead-or-alive-rick-and-morty
+cd rick-and-morty-dead-or-alive-game
 ```
 4. Instale as dependências do projeto:
 ```nash
